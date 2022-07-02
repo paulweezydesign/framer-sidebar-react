@@ -31,6 +31,7 @@ export default function App() {
   const { height } = useDimensions(containerRef);
 
   return (
+    <div className="NavBar">
     <motion.nav
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
@@ -41,5 +42,6 @@ export default function App() {
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
-  );
+  </div >
+   );
 }
